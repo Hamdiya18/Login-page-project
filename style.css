@@ -101,14 +101,14 @@ given an index to help diplay the form on top of the background design. */
 }
 
 .login_form {
-    margin-top: -70px;
+    margin-top: -60px;
     margin-right: 70px;
 }
 
 /* the next two blocks of code were used to acheive the transition and appearance
  of the input field and the label */
 .login_form input {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border: none;
     background: none;
     border-bottom: 1.5px solid rgb(94, 92, 92);
@@ -139,6 +139,7 @@ button {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 /* applies a hover propety to the button */
@@ -187,4 +188,25 @@ effects for the social media icons */
 
 .social_media i:hover {
     transform: scale(1.15) translatey(-2px);
+}
+#remember{
+accent-color: #961D89;
+width: 18px;
+height: 18px;
+/* margin-top: 20px; */
+}
+.check label{
+    color: #961D89;
+    transition: 0.25s;
+}
+.check{
+      display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* margin-top: 20px; */
+    gap: 10px;
+
+}
+.check label:hover{
+    transform: scale(1.05);
 }
