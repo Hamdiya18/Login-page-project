@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* this part sets the login page to occupy the viewport and also adjust the login card exactly to the center*/
+body {
+    background-color: rgb(234, 80, 237);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Sets the size of the login card and centers the items that will be put in it, with a box-shadow property*/
+.login_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #98168B, #a23f96);
+    height: 400px;
+    width: 250px;
+    gap: 30px;
+    position: relative;
+    box-shadow: 0px 0px 15px 1px #90658c;
+}
+
+/* A big card that contains other small cards for the design.
+Its offse properties are set to 0, which centers the card and
+has an absolute position which can help the card float and be properly adjusted.
+it also has its overflow set to be hidden so that excess items don't exceed outside the card.*/
+.background_cards {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+/* The four folowing cards are used to achieve the background design of the login card */
+.background_cards_1 {
+    background: white;
+    width: 270px;
+    height: 320px;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: -120px;
+    border-radius: 0 40px 0px 0px;
+    z-index: 1;
+}
+
+.background_cards_2 {
+    background: hsl(306, 70%, 35%);
+    width: 190px;
+    height: 255px;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -210px;
+    left: 95px;
+    border-radius: 20px;
+}
+
+.background_cards_3 {
+    background: linear-gradient(to right, hsl(309, 39%, 40%), hsl(306, 75%, 34%));
+    width: 120px;
+    height: 350px;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: -15px;
+    border-radius: 25px;
+}
+
+.background_cards_4 {
+    background: hsl(307, 44%, 45%);
+    width: 200px;
+    height: 350px;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    border-radius: 25px;
+    bottom: -230px;
+    z-index: 1;
+    right: 0;
+}
+
+/* The following two blocks of code was used to adjust the position of the form and also 
+given an index to help diplay the form on top of the background design. */
+.login {
+    z-index: 2;
+    margin-left: 30px;
+}
+
+.login_form {
+    margin-top: -70px;
+    margin-right: 70px;
+}
+
+/* the next two blocks of code were used to acheive the transition and appearance
+ of the input field and the label */
+.login_form input {
+    margin-bottom: 30px;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid rgb(94, 92, 92);
+    transition: 0.2s;
+}
+
+.login_form label {
+    color: rgb(94, 92, 92);
+}
+
+/* this set the color of the icons to purple */
+i {
+    color: #961D89;
+}
+
+/* this block was used to set the size and design of the button */
+button {
+    width: 180px;
+    background: linear-gradient(white, rgb(182, 181, 181));
+    border: 1px solid rgb(208, 204, 208);
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 2px -1px #740e69;
+    transition: 0.3s;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* applies a hover propety to the button */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* changes color of input feilds when clicked. */
+input:focus {
+    outline: none;
+    border-bottom: 1.5px solid #961D89;
+}
+
+/* applies hover to input fields. */
+input:hover {
+    transform: scale(1.05);
+}
+
+/* this is where the design og the social section is achived */
+.social_media {
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    left: 170px;
+    color: white;
+}
+
+/* used to create space between the social media icons and the text
+in the social section. */
+h4 {
+    margin-bottom: 10px;
+}
+
+/* these blocks are used to achieve the color, transition and hover 
+effects for the social media icons */
+.social_media i {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social_media i:hover {
+    transform: scale(1.15) translatey(-2px);
+}
