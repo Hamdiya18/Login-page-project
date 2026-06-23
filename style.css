@@ -8,7 +8,7 @@
 
 /* this part sets the login page to occupy the viewport and also adjust the login card exactly to the center*/
 body {
-    background-color: rgb(234, 80, 237);
+    background:linear-gradient(to right, #e586e7, #a33197 );
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -189,11 +189,11 @@ effects for the social media icons */
 .social_media i:hover {
     transform: scale(1.15) translatey(-2px);
 }
+/* this is where I achieved the checkbox. */
 #remember{
 accent-color: #961D89;
 width: 18px;
 height: 18px;
-/* margin-top: 20px; */
 }
 .check label{
     color: #961D89;
@@ -201,9 +201,6 @@ height: 18px;
 }
 .check{
       display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    /* margin-top: 20px; */
     gap: 10px;
 
 }
